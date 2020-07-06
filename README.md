@@ -1,6 +1,7 @@
-<p align="center"><img src="Images/logo-main.png" width="200"></p>
 
 # Tic-Tac-Toe-Assembly-8086
+<p align="center"><img src="Images/logo-main.png" width="200"></p>
+
 Tic Tac Toe Implementation in Assembly 8086
 
 
