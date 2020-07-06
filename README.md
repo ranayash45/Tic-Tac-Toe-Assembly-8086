@@ -99,7 +99,23 @@ Note:- this variable is later used for checking
 1. chck - for chceking ending of game or not. 
 
 ## Main Core Login Explaination
-<p align="center"><img src="Images/main.PNG" /></p>
-<h4 align="center">Figure 3:- Code Segment</h4>
+<p align="center"><img src="Images/main.PNG" width="300"/></p>
+<h4 align="center">Figure 4:- Code Segment</h4>
+<p> Here are very main logic behind the game. </p>
+1. So very first, Code intialize or put data in data segment, code in code segment
+2. after code initialize, it moves data segment to data register for accessing data
+3. after that we set or on mouse input for provide input
+4. Now it print message at location as "Press enter any key to start game"
+5. And wait until some input is come.
+6. Clear the screen using above macro
+7. then called tictactoe procedure to print table
+8. main event loop start to check game condition. for more detail check code.
+9. on every interation it is called check and winner function to close game.
+10. if someone is wins, it close game with message.
 
+## tic tac toe Procedure
+<p align="center"><img src="Images/tictactoe.PNG" width="300"/></p>
+<h4 align="center">Figure 5:- TicTacToe Procedure</h4>
+<p> So here is our main table of game </p>
+<p> Code prints table for tic tac toe </p>
 
