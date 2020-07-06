@@ -7,6 +7,12 @@ Tic Tac Toe Implementation in Assembly 8086
 ## Details:-
 <p>It is normal tic tac toe but thing is that it is implemented in Assembly Code. It is fun to check how assembly works over bit complex codes. So in this code, I try to implement various macros in assembly such as Print Message at prifix location, Clear Scree and checking conditions to put 'O' or 'X'.</p>
 
+## Index:-
+1. <a href="#macros-for-easy-to-do-some-functioinality-">Macros of code</a>
+1. <a href="#data-segment-explaination-">Data Segment Explaination</a>
+1. <a href="#main-core-login-explaination">Main Screen Explaination</a>
+1. <a href="#tic-tac-toe-procedure"> Display Procedure</a>
+
 ## Macros for easy to do some functioinality:-
 
 
