@@ -12,7 +12,7 @@ Tic Tac Toe Implementation in Assembly 8086
 
 ### Print And Clear Screen Macro
 <p align="center"><img src="Images/macro1.PNG" width="250" /></p>
-<h4>Figure 1: Print Macro for print something and Clear macro for clearing screen</h4>
+<h4 align="center">Figure 1: Print Macro for print something and Clear macro for clearing screen</h4>
 
 ### Print Macro Explaination
 
