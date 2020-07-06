@@ -9,10 +9,14 @@ Tic Tac Toe Implementation in Assembly 8086
 
 ## Macros for easy to do some functioinality
 
+
+### Print And Clear Screen Macro
 <p align="center"><img src="Images/macro1.PNG" width="250" /></p>
 <h4>Figure 1: Print Macro for print something and Clear macro for clearing screen</h4>
 
-### In Figure 1, you can see there is two macros created for printing and clearing screen. there are four parameters in print macro.
+### Print Macro Explaination
+
+In Figure 1, you can see there is two macros created for printing and clearing screen. there are four parameters in print macro.
  
 1. x :- Location of x in screen or column of main screen where our text start printing.
 1. y :- Location of y in screen or row of main screen where our text start printing.
@@ -39,7 +43,7 @@ Now following things will happen in code.
 1. now generate interupt of 10 hex for print
 1. after print done restore register value from stack and macro over.
 
-#### Clear Screen Macro Explaination
+### Clear Screen Macro Explaination
 
 1. Store all register values to stack
 1. Set intterupt routine to clear screen
@@ -53,5 +57,31 @@ Now following things will happen in code.
 for more info check this link:- https://en.wikipedia.org/wiki/INT_10H
 
 
+### Macro for placing 'O' and 'X' in screen and memory
 
+<p align="center"><img src="Images/macro2.PNG"></p>
+<h4 align="Center">Figure 2:- Place and selection macro</h4>
+<p> 
+    So over here nothing so special is done, Here we store state of game markers in data segment and print output 'O' and 'X' on screen.
+    Cool thing is that 8086 support mouse input with 33h interupt check this. 
+    link:- http://www.ablmcc.edu.hk/~scy/CIT/8086_bios_and_dos_interrupts.htm#int33h_0000h 
+    In today's world, it is quite easy to use mouse but still it is joyful to use mouse in assembly.
+</p>
+
+#### place macro
+
+1. steps one copy data from macro variable to register
+1. store those value in datasegment's variable ox,oy
+    1. it is location to place marker
+1. done
+
+Note:- this variable is later used for checking
+
+#### Select Macro
+
+1. first get turn variable to check who's turn. it is either 'O' or 'X'.
+2. if turn is for 'O' then it is used to set status flag and according instruction pointer jumps
+3. after jumping it set 'X' or 'O' marker at location which is store in ox,oy of Data Segment
+    1. it is stored by place macro
+4. Done.
 
