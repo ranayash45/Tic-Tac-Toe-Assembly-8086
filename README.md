@@ -4,17 +4,17 @@
 Tic Tac Toe Implementation in Assembly 8086
 
 
-## Details
+## Details:-
 <p>It is normal tic tac toe but thing is that it is implemented in Assembly Code. It is fun to check how assembly works over bit complex codes. So in this code, I try to implement various macros in assembly such as Print Message at prifix location, Clear Scree and checking conditions to put 'O' or 'X'.</p>
 
-## Macros for easy to do some functioinality
+## Macros for easy to do some functioinality:-
 
 
-### Print And Clear Screen Macro
+### Print And Clear Screen Macro:-
 <p align="center"><img src="Images/macro1.PNG" width="250" /></p>
 <h4 align="center">Figure 1: Print Macro for print something and Clear macro for clearing screen</h4>
 
-### Print Macro Explaination
+### Print Macro Explaination:-
 
 In Figure 1, you can see there is two macros created for printing and clearing screen. there are four parameters in print macro.
  
@@ -43,7 +43,7 @@ Now following things will happen in code.
 1. now generate interupt of 10 hex for print
 1. after print done restore register value from stack and macro over.
 
-### Clear Screen Macro Explaination
+### Clear Screen Macro Explaination:-
 
 1. Store all register values to stack
 1. Set intterupt routine to clear screen
@@ -68,7 +68,7 @@ for more info check this link:- https://en.wikipedia.org/wiki/INT_10H
     In today's world, it is quite easy to use mouse but still it is joyful to use mouse in assembly.
 </p>
 
-#### place macro
+#### Place macro explaination:-
 
 1. steps one copy data from macro variable to register
 1. store those value in datasegment's variable ox,oy
@@ -77,11 +77,25 @@ for more info check this link:- https://en.wikipedia.org/wiki/INT_10H
 
 Note:- this variable is later used for checking
 
-#### Select Macro
+#### Select Macro explaination:-
 
 1. first get turn variable to check who's turn. it is either 'O' or 'X'.
 2. if turn is for 'O' then it is used to set status flag and according instruction pointer jumps
 3. after jumping it set 'X' or 'O' marker at location which is store in ox,oy of Data Segment
     1. it is stored by place macro
 4. Done.
+
+## Data Segment Explaination:-
+<p align="center"><img src="Images/data1.PNG" /></p>
+<h4 align="center">Figure 3:- Data Segment</h4>
+<p>
+    Data segment has minimal variables used to store state of game. such as turn, 9 block's state, last print location,
+    1. a - used to store 1st row of game
+    1. b - used to store 2nd row of game
+    1. c - used to store 3rd row of game
+    1. ox,oy - used to store location of print 'O' and 'X'
+    1. turn - used to store turn of user
+    1. chck - for chceking ending of game or not. 
+</p>
+
 
