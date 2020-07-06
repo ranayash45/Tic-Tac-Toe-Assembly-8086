@@ -28,4 +28,30 @@ s_dcl_end - locate ending position of string
 after that there is command called "pusha"
 it stores previous information in stack.
 
+Now following things will happen in code.
+
+1. move Code Segment to extra segment for display
+1. setting Interupt 13 hex High and 1 hex low for display on screen with location
+1. put formatting information in Base Register
+1. provide string character counter for printing data
+1. provide print location in data register
+1. provide start location to base pointer for printing
+1. now generate interupt of 10 hex for print
+1. after print done restore register value from stack and macro over.
+
+#### Clear Screen Macro Explaination
+
+1. Store all register values to stack
+1. Set intterupt routine to clear screen
+1. set formatting setting in base register such as forecolor and backcolor
+1. set cx to zero because nothing to print just have to clear
+1. so here we scroll thing in terms of DL = Right Column Number and DH Lower Row Number to clean.
+    1. I used approximate value according need
+1. Now provide 10h interupt routine to run code.
+1. after interup routine, code restore all register value
+
+for more info check this link:- https://en.wikipedia.org/wiki/INT_10H
+
+
+
 
