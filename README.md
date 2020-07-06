@@ -11,7 +11,7 @@ Tic Tac Toe Implementation in Assembly 8086
 1. <a href="#macros-for-easy-to-do-some-functioinality-">Macros of code</a>
 1. <a href="#data-segment-explaination-">Data Segment Explaination</a>
 1. <a href="#main-core-login-explaination">Main Screen Explaination</a>
-1. <a href="#tic-tac-toe-procedure"> Display Procedure</a>
+1. <a href="#display-procedure"> Display Procedure</a>
 
 ## Macros for easy to do some functioinality:-
 
@@ -119,7 +119,7 @@ Note:- this variable is later used for checking
 9. on every interation it is called check and winner function to close game.
 10. if someone is wins, it close game with message.
 
-## tic tac toe Procedure
+## Display procedure
 <p align="center"><img src="Images/tictactoe.PNG" width="300"/></p>
 <h4 align="center">Figure 5:- TicTacToe Procedure</h4>
 <p> So here is our main table of game </p>
