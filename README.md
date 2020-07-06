@@ -89,13 +89,13 @@ Note:- this variable is later used for checking
 <p align="center"><img src="Images/data1.PNG" /></p>
 <h4 align="center">Figure 3:- Data Segment</h4>
 <p>
-    Data segment has minimal variables used to store state of game. such as turn, 9 block's state, last print location,
+    Data segment has minimal variables used to store state of game. such as turn, 9 block's state, last print location, </p>
     1. a - used to store 1st row of game
     1. b - used to store 2nd row of game
     1. c - used to store 3rd row of game
     1. ox,oy - used to store location of print 'O' and 'X'
     1. turn - used to store turn of user
     1. chck - for chceking ending of game or not. 
-</p>
+
 
 
